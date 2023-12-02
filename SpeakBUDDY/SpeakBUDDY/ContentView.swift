@@ -22,7 +22,6 @@ struct ContentView: View {
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
 
-
             Text("Hello\nSpeakBUDDY")
                 .font(.largeTitle)
             Image("protty")
@@ -32,10 +31,12 @@ struct ContentView: View {
             Text("レベルアップ")
                 .background(Gradients().barGradient)
 
-            Button("プランに登録する") {
+            CTAButton(title: "プランに登録する") {
                 print("Sign up was tapped")
             }
-            .background(Color("buttonColor"))
+            .frame(width: .infinity)
+            .padding(.horizontal, 16)
+            
         }
         .padding()
         .background(Gradients().bgGradient)

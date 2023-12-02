@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Gradients {
     var bgGradient = LinearGradient(
-        gradient: Gradient(colors: [Color("bgGradient1"), Color("bgGradient2")]),
+        gradient: Gradient(colors: [Color("backgroundGradient1"), Color("backgroundGradient2")]),
         startPoint: UnitPoint(x: 0, y: 0),
         endPoint: UnitPoint(x: 1, y: 1)
     )

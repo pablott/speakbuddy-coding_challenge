@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6E41DE572B1B52870034D4D3 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41DE562B1B52870034D4D3 /* Gradients.swift */; };
+		6E41DE5A2B1B85570034D4D3 /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41DE592B1B85570034D4D3 /* Styling.swift */; };
+		6E41DE5C2B1B89E80034D4D3 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41DE5B2B1B89E80034D4D3 /* CTAButton.swift */; };
 		6EB3D8BF2B1AF58A00850B68 /* SpeakBUDDYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3D8BE2B1AF58A00850B68 /* SpeakBUDDYApp.swift */; };
 		6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C02B1AF58A00850B68 /* ContentView.swift */; };
 		6EB3D8C32B1AF58B00850B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		6E41DE562B1B52870034D4D3 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		6E41DE592B1B85570034D4D3 /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		6E41DE5B2B1B89E80034D4D3 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		6EB3D8BB2B1AF58A00850B68 /* SpeakBUDDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakBUDDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB3D8BE2B1AF58A00850B68 /* SpeakBUDDYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakBUDDYApp.swift; sourceTree = "<group>"; };
 		6EB3D8C02B1AF58A00850B68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,9 +41,26 @@
 		6E41DE552B1B525A0034D4D3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				6E41DE562B1B52870034D4D3 /* Gradients.swift */,
+				6E41DE5D2B1B8A640034D4D3 /* Button */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		6E41DE582B1B85390034D4D3 /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				6E41DE562B1B52870034D4D3 /* Gradients.swift */,
+				6E41DE592B1B85570034D4D3 /* Styling.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		6E41DE5D2B1B8A640034D4D3 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6E41DE5B2B1B89E80034D4D3 /* CTAButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		6EB3D8B22B1AF58A00850B68 = {
@@ -61,6 +82,7 @@
 		6EB3D8BD2B1AF58A00850B68 /* SpeakBUDDY */ = {
 			isa = PBXGroup;
 			children = (
+				6E41DE582B1B85390034D4D3 /* Styling */,
 				6E41DE552B1B525A0034D4D3 /* Components */,
 				6EB3D8BE2B1AF58A00850B68 /* SpeakBUDDYApp.swift */,
 				6EB3D8C02B1AF58A00850B68 /* ContentView.swift */,
@@ -148,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E41DE5C2B1B89E80034D4D3 /* CTAButton.swift in Sources */,
 				6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */,
 				6EB3D8BF2B1AF58A00850B68 /* SpeakBUDDYApp.swift in Sources */,
+				6E41DE5A2B1B85570034D4D3 /* Styling.swift in Sources */,
 				6E41DE572B1B52870034D4D3 /* Gradients.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
