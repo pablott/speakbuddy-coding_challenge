@@ -14,6 +14,7 @@
 		6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C02B1AF58A00850B68 /* ContentView.swift */; };
 		6EB3D8C32B1AF58B00850B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */; };
 		6EB3D8C62B1AF58B00850B68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C52B1AF58B00850B68 /* Preview Assets.xcassets */; };
+		6EF513172B1B953800E0D3CC /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF513162B1B953800E0D3CC /* CloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		6EB3D8C02B1AF58A00850B68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB3D8C52B1AF58B00850B68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EF513162B1B953800E0D3CC /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				6E41DE5B2B1B89E80034D4D3 /* CTAButton.swift */,
+				6EF513162B1B953800E0D3CC /* CloseButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF513172B1B953800E0D3CC /* CloseButton.swift in Sources */,
 				6E41DE5C2B1B89E80034D4D3 /* CTAButton.swift in Sources */,
 				6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */,
 				6EB3D8BF2B1AF58A00850B68 /* SpeakBUDDYApp.swift in Sources */,

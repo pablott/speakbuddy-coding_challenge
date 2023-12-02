@@ -10,16 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Button {
-                print("Close was tapped")
-            } label: {
-                Image(systemName: "xmark")
-                    .fontWeight(.bold)
-                    .padding()
-                    .foregroundColor(Color("textColor"))
-                    .background(.gray)
-                    .clipShape(Circle())
-                    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            HStack {
+                Spacer()
+                CloseButton {
+                    print("Close was tapped")
+                }
             }
 
             Text("Hello\nSpeakBUDDY")
