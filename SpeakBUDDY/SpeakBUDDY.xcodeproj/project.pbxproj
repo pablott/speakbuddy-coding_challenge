@@ -15,6 +15,7 @@
 		6EB3D8C32B1AF58B00850B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */; };
 		6EB3D8C62B1AF58B00850B68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C52B1AF58B00850B68 /* Preview Assets.xcassets */; };
 		6EF513172B1B953800E0D3CC /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF513162B1B953800E0D3CC /* CloseButton.swift */; };
+		6EF5131A2B1BA11E00E0D3CC /* MainTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF513192B1BA11E00E0D3CC /* MainTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB3D8C52B1AF58B00850B68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6EF513162B1B953800E0D3CC /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		6EF513192B1BA11E00E0D3CC /* MainTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		6E41DE552B1B525A0034D4D3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6EF513182B1BA10E00E0D3CC /* Text */,
 				6E41DE5D2B1B8A640034D4D3 /* Button */,
 			);
 			path = Components;
@@ -101,6 +104,14 @@
 				6EB3D8C52B1AF58B00850B68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6EF513182B1BA10E00E0D3CC /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				6EF513192B1BA11E00E0D3CC /* MainTitle.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			files = (
 				6EF513172B1B953800E0D3CC /* CloseButton.swift in Sources */,
 				6E41DE5C2B1B89E80034D4D3 /* CTAButton.swift in Sources */,
+				6EF5131A2B1BA11E00E0D3CC /* MainTitle.swift in Sources */,
 				6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */,
 				6EB3D8BF2B1AF58A00850B68 /* SpeakBUDDYApp.swift in Sources */,
 				6E41DE5A2B1B85570034D4D3 /* Styling.swift in Sources */,

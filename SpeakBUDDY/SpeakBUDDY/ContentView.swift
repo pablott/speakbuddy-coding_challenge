@@ -17,8 +17,8 @@ struct ContentView: View {
                 }
             }
 
-            Text("Hello\nSpeakBUDDY")
-                .font(.largeTitle)
+            // Title
+            MainTitle(title: "Hello\nSpeakBUDDY")
             Image("protty")
             Rectangle()
                 .fill(Gradients().barGradient)
