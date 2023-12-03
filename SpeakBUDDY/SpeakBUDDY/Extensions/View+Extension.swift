@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import UIKit
 
 // These extensions applies view modifiers to views.
 // The same effect can be accomplished with extension only,
 // but modifiers can hold state in case we needed.
 extension View {
-    // Text
+    // MARK: - Text
     func applyTitleStyle() -> some View {
         modifier(TitleStyle())
     }
@@ -28,7 +29,7 @@ extension View {
         modifier(LabelStyle())
     }
     
-    // Button
+    // MARK: - Button
     func applyCTAButtonStyle() -> some View {
         modifier(CTAButtonStyle())
     }
@@ -37,8 +38,19 @@ extension View {
         modifier(CloseButtonStyle())
     }
     
-    // Shadow
+    // MARK: - Shadow
     func applyButtonShadow() -> some View {
         modifier(ShadowStyle())
+    }
+
+    // MARK: - Scale
+    func scaleBasedOnScreenSize() -> some View {
+        // This is a rudimentary implementation.
+        // There are better ways of detecting this,
+        // like a table of screens sizes or querying device info
+        let factor: CGFloat = UIScreen.main.bounds.width > 600
+            ? Constants.bigScreenFactor
+            : 1
+        return modifier(SizeModifier(factor: factor))
     }
 }

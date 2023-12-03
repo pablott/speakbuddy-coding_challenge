@@ -90,3 +90,13 @@ struct ShadowStyle: ViewModifier {
 
     }
 }
+
+// MARK: - Scale
+struct SizeModifier: ViewModifier {
+    let factor: CGFloat
+    
+    func body(content: Content) -> some View {
+        content
+            .scaleEffect(factor)
+    }
+}

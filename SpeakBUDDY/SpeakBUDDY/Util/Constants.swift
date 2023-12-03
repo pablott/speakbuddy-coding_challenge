@@ -10,9 +10,12 @@ import Foundation
 struct Constants {
     // MARK: - Bar configuration
     static let barAnimationTiming: TimeInterval = 0.6
-    static let barSpacingFactor = 0.3
+    static let barSpacingFactor: CGFloat = 0.3
     
     // MARK: - Protty
-    static let prottySizeFactor = 0.4
-    static let prottyPositionFactor = 0.15
+    static let prottySizeFactor: CGFloat = 0.4
+    static let prottyPositionFactor: CGFloat = 0.15
+    
+    // MARK: - Screen
+    static let bigScreenFactor: CGFloat = 1.3
 }

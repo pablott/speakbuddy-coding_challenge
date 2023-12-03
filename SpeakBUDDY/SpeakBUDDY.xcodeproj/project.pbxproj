@@ -128,6 +128,7 @@
 		6EB3D8BD2B1AF58A00850B68 /* SpeakBUDDY */ = {
 			isa = PBXGroup;
 			children = (
+				6ED441BB2B1CC9BC0065B886 /* Util */,
 				6E5BE1202B1C96480052E39A /* Model */,
 				6EADF8022B1C526E000C4FD4 /* Extensions */,
 				6E41DE582B1B85390034D4D3 /* Styling */,
@@ -136,7 +137,6 @@
 				6EB3D8C02B1AF58A00850B68 /* ContentView.swift */,
 				6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */,
 				6EB3D8C42B1AF58B00850B68 /* Preview Content */,
-				6E5BE1232B1CBD450052E39A /* Constants.swift */,
 			);
 			path = SpeakBUDDY;
 			sourceTree = "<group>";
@@ -147,6 +147,14 @@
 				6EB3D8C52B1AF58B00850B68 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ED441BB2B1CC9BC0065B886 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BE1232B1CBD450052E39A /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		6EF513182B1BA10E00E0D3CC /* Text */ = {

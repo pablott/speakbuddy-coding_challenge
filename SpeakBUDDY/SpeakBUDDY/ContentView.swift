@@ -16,9 +16,13 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
-                CloseButton {
-                    print("Close was tapped")
-                }
+                    CloseButton {
+                        print("Close was tapped")
+                    }
+                    // The PDF states "the size of each component should be adjusted according to screen size".
+                    // I think this should not be done. Better to follow Apple's HIG for tappable elements.
+                    .scaleBasedOnScreenSize()
+                    .padding(.trailing, 10)
             }
 
             // MARK: Title
