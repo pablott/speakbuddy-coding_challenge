@@ -33,11 +33,16 @@ struct ContentView: View {
             }
             .overlay {
                 // MARK: Protty
-                Image("protty")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 130)
-                    .position(x: 80, y: 40)
+                GeometryReader { geometry in
+                    Image("protty")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: geometry.size.height * Constants.prottySizeFactor)
+                        .position(
+                            x: geometry.size.width * Constants.prottyPositionFactor,
+                            y: geometry.size.height * Constants.prottyPositionFactor
+                        )
+                }
             }
             
             // MARK: Instructions
