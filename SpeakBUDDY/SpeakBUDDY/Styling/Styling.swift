@@ -72,9 +72,9 @@ struct CTAButtonStyle: ViewModifier {
 struct CloseButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.callout)
+            .font(.caption)
             .fontWeight(.black)
-            .padding(12)
+            .padding(10)
             .foregroundColor(Color("textColor"))
             .background(Color("closeButtonBackgroundColor"))
             .clipShape(Circle())
