@@ -24,6 +24,10 @@ extension View {
         modifier(DecoratedStyle())
     }
     
+    func applyLabelStyle() -> some View {
+        modifier(LabelStyle())
+    }
+    
     // Button
     func applyCTAButtonStyle() -> some View {
         modifier(CTAButtonStyle())

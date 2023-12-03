@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    let arrayData: [BarData] = [
+        BarData(value: 0.2, label: "現在"),
+        BarData(value: 0.33, label: "3ヶ月"),
+        BarData(value: 0.7, label: "1年"),
+        BarData(value: 1, label: "2年"),
+
+    ]
+    
     var body: some View {
         VStack {
-            Spacer().frame(height: 16)
-            
             // Close button
+            Spacer()
             HStack {
                 Spacer()
                 CloseButton {
@@ -23,28 +30,33 @@ struct ContentView: View {
             // Title
             MainTitle(title: "Hello\nSpeakBUDDY")
             
-            // Protty
-            Image("protty")
-            
             // Bar array
-            // TODO: make array with HStack and data[]
-            Spacer()
-            Rectangle()
-                .fill(Gradients().barGradient)
-                .frame(width: 58, height: 100)
-                .clipShape(UnevenRoundedRectangle(cornerRadii: RectangleCornerRadii(topLeading: 8, bottomLeading: 0, bottomTrailing: 0, topTrailing: 8)))
+            Spacer(minLength: 32)
+            HStack {
+                BarArray(data: arrayData)
+                    .frame(minHeight: 100, maxHeight: 500)
+                    .padding(.horizontal, 40)
+            }
+            .overlay {
+                // Protty
+                Image("protty")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 130)
+                    .position(x: 80, y: 40)
+            }
             
             // Instructions
-            Spacer().frame(height: 16)
+            Spacer(minLength: 16)
             InstructionText(title: "スピークバディで")
             DecoratedText(title: "レベルアップ")
             
-            // Buttons
+            // CTA button
             CTAButton(title: "プランに登録する") {
                 print("Sign up was tapped")
             }
             
-            Spacer().frame(height: 16)
+            Spacer(minLength: 16)
         }
         .padding()
         .background(Gradients().bgGradient)

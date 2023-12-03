@@ -1,5 +1,5 @@
 //
-//  Button.swift
+//  CTAButton.swift
 //  SpeakBUDDY
 //
 //  Created by Pablo Trabajos on 03/12/2023.

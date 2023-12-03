@@ -38,6 +38,16 @@ struct DecoratedStyle: ViewModifier {
     }
 }
 
+struct LabelStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.footnote)
+            .fontWeight(.black)
+            .foregroundColor(Color("textColor"))
+            .multilineTextAlignment(.center)
+    }
+}
+
 
 
 // MARK: - Buttons
