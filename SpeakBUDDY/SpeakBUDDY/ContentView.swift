@@ -48,6 +48,7 @@ struct ContentView: View {
             // CTA button
             CTAButton(title: "プランに登録する") {
                 print("Sign up was tapped")
+                model.loadRandomValues()
             }
             .frame(minWidth: 230, maxWidth: 400)
             
@@ -55,6 +56,9 @@ struct ContentView: View {
         }
         .padding()
         .background(Gradients().bgGradient)
+        .onAppear {
+            model.loadInitialValues()
+        }
     }
 }
 
