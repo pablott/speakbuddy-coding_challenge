@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            // Close button
+            // MARK: Close button
             Spacer()
             HStack {
                 Spacer()
@@ -21,10 +21,10 @@ struct ContentView: View {
                 }
             }
 
-            // Title
+            // MARK: Title
             MainTitle(title: "Hello\nSpeakBUDDY")
             
-            // Bar array
+            // MARK: Bar array
             Spacer(minLength: 32)
             HStack {
                 BarArray(data: model.arrayData)
@@ -32,7 +32,7 @@ struct ContentView: View {
                     .padding(.horizontal, 40)
             }
             .overlay {
-                // Protty
+                // MARK: Protty
                 Image("protty")
                     .resizable()
                     .scaledToFit()
@@ -40,12 +40,12 @@ struct ContentView: View {
                     .position(x: 80, y: 40)
             }
             
-            // Instructions
+            // MARK: Instructions
             Spacer(minLength: 16)
             InstructionText(title: "スピークバディで")
             DecoratedText(title: "レベルアップ")
             
-            // CTA button
+            // MARK: CTA button
             CTAButton(title: "プランに登録する") {
                 print("Sign up was tapped")
                 model.loadRandomValues()
