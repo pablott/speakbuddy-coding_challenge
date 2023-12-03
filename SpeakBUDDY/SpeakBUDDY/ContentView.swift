@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            Spacer().frame(height: 16)
+            
+            // Close button
             HStack {
                 Spacer()
                 CloseButton {
@@ -19,23 +22,32 @@ struct ContentView: View {
 
             // Title
             MainTitle(title: "Hello\nSpeakBUDDY")
+            
+            // Protty
             Image("protty")
+            
+            // Bar array
+            // TODO: make array with HStack and data[]
+            Spacer()
             Rectangle()
                 .fill(Gradients().barGradient)
-            Text("スピークバディで")
-            Text("レベルアップ")
-                .background(Gradients().barGradient)
-
+                .frame(width: 58, height: 100)
+                .clipShape(UnevenRoundedRectangle(cornerRadii: RectangleCornerRadii(topLeading: 8, bottomLeading: 0, bottomTrailing: 0, topTrailing: 8)))
+            
+            // Instructions
+            Spacer().frame(height: 16)
+            InstructionText(title: "スピークバディで")
+            DecoratedText(title: "レベルアップ")
+            
+            // Buttons
             CTAButton(title: "プランに登録する") {
                 print("Sign up was tapped")
             }
-            .frame(width: .infinity)
-            .padding(.horizontal, 16)
             
+            Spacer().frame(height: 16)
         }
         .padding()
         .background(Gradients().bgGradient)
-
     }
 }
 
