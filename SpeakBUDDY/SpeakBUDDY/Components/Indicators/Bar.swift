@@ -24,7 +24,7 @@ struct Bar: View {
                     .fill(Gradients().barGradient)
                     .frame(height: (data.value * (geometry.size.height - labelHeight)) )
                     .clipShape(UnevenRoundedRectangle(cornerRadii: RectangleCornerRadii(topLeading: 8, bottomLeading: 0, bottomTrailing: 0, topTrailing: 8)))
-                    .animation(.easeInOut(duration: 0.6), value: data.value)
+                    .animation(.easeInOut(duration: Constants.barAnimationTiming), value: data.value)
                 
                 Text(data.label)
                     .frame(height: labelHeight)

@@ -14,7 +14,7 @@ struct BarArray: View {
         // Geometry proxy is used to adjust bar spacing depending on screen sizes.
         // More sophisticated rules could be added here.
         GeometryReader { geometry in
-            HStack(spacing: (geometry.size.width / CGFloat(data.count)) * 0.3) {
+            HStack(spacing: (geometry.size.width / CGFloat(data.count)) * Constants.barSpacingFactor) {
                 ForEach(Array(data.enumerated()), id: \.0.self) { index, item in
                     Bar(data: item)
                         .tag(index)
