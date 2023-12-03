@@ -7,10 +7,45 @@
 
 import SwiftUI
 
+// MARK: - Text
+struct TitleStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(Color("textColor"))
+            .multilineTextAlignment(.center)
+    }
+}
+
+struct InstructionStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.title3)
+            .fontWeight(.semibold)
+            .foregroundColor(Color("textColor"))
+            .multilineTextAlignment(.center)
+    }
+}
+
+struct DecoratedStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.title)
+            .fontWeight(.black)
+            .foregroundStyle(Gradients().barGradient)
+            .multilineTextAlignment(.center)
+    }
+}
+
+
+
+// MARK: - Buttons
 struct CTAButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.system(size: FontSize.button.rawValue).weight(.semibold))
+            .font(.body)
+            .fontWeight(.semibold)
             .padding(20)
             .foregroundColor(Color("buttonForegroundColor"))
             .background(Color("buttonBackgroundColor"))
@@ -27,7 +62,8 @@ struct CTAButtonStyle: ViewModifier {
 struct CloseButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.system(size: FontSize.icon.rawValue).weight(.black))
+            .font(.callout)
+            .fontWeight(.black)
             .padding(12)
             .foregroundColor(Color("textColor"))
             .background(Color("closeButtonBackgroundColor"))
@@ -36,6 +72,7 @@ struct CloseButtonStyle: ViewModifier {
     }
 }
 
+// MARK: - Shadow
 struct ShadowStyle: ViewModifier {
     func body(content: Content) -> some View {
         content

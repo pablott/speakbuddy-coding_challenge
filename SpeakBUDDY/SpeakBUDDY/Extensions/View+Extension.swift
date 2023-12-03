@@ -11,6 +11,20 @@ import SwiftUI
 // The same effect can be accomplished with extension only,
 // but modifiers can hold state in case we needed.
 extension View {
+    // Text
+    func applyTitleStyle() -> some View {
+        modifier(TitleStyle())
+    }
+    
+    func applyInstructionStyle() -> some View {
+        modifier(InstructionStyle())
+    }
+    
+    func applyDecoratedStyle() -> some View {
+        modifier(DecoratedStyle())
+    }
+    
+    // Button
     func applyCTAButtonStyle() -> some View {
         modifier(CTAButtonStyle())
     }
@@ -19,6 +33,7 @@ extension View {
         modifier(CloseButtonStyle())
     }
     
+    // Shadow
     func applyButtonShadow() -> some View {
         modifier(ShadowStyle())
     }

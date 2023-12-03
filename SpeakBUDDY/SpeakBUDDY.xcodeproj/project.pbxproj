@@ -12,6 +12,8 @@
 		6E41DE5C2B1B89E80034D4D3 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41DE5B2B1B89E80034D4D3 /* CTAButton.swift */; };
 		6EADF8012B1C5155000C4FD4 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF8002B1C5155000C4FD4 /* FontSize.swift */; };
 		6EADF8042B1C527E000C4FD4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF8032B1C527E000C4FD4 /* View+Extension.swift */; };
+		6EADF8062B1C5FCB000C4FD4 /* InstructionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF8052B1C5FCB000C4FD4 /* InstructionText.swift */; };
+		6EADF8082B1C66C3000C4FD4 /* DecoratedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF8072B1C66C3000C4FD4 /* DecoratedText.swift */; };
 		6EB3D8BF2B1AF58A00850B68 /* SpeakBUDDYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3D8BE2B1AF58A00850B68 /* SpeakBUDDYApp.swift */; };
 		6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C02B1AF58A00850B68 /* ContentView.swift */; };
 		6EB3D8C32B1AF58B00850B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB3D8C22B1AF58B00850B68 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 		6E41DE5B2B1B89E80034D4D3 /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		6EADF8002B1C5155000C4FD4 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		6EADF8032B1C527E000C4FD4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		6EADF8052B1C5FCB000C4FD4 /* InstructionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionText.swift; sourceTree = "<group>"; };
+		6EADF8072B1C66C3000C4FD4 /* DecoratedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratedText.swift; sourceTree = "<group>"; };
 		6EB3D8BB2B1AF58A00850B68 /* SpeakBUDDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakBUDDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB3D8BE2B1AF58A00850B68 /* SpeakBUDDYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakBUDDYApp.swift; sourceTree = "<group>"; };
 		6EB3D8C02B1AF58A00850B68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				6EF513192B1BA11E00E0D3CC /* MainTitle.swift */,
+				6EADF8052B1C5FCB000C4FD4 /* InstructionText.swift */,
+				6EADF8072B1C66C3000C4FD4 /* DecoratedText.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -201,9 +207,11 @@
 				6EF513172B1B953800E0D3CC /* CloseButton.swift in Sources */,
 				6E41DE5C2B1B89E80034D4D3 /* CTAButton.swift in Sources */,
 				6EF5131A2B1BA11E00E0D3CC /* MainTitle.swift in Sources */,
+				6EADF8062B1C5FCB000C4FD4 /* InstructionText.swift in Sources */,
 				6EADF8012B1C5155000C4FD4 /* FontSize.swift in Sources */,
 				6EB3D8C12B1AF58A00850B68 /* ContentView.swift in Sources */,
 				6EB3D8BF2B1AF58A00850B68 /* SpeakBUDDYApp.swift in Sources */,
+				6EADF8082B1C66C3000C4FD4 /* DecoratedText.swift in Sources */,
 				6E41DE5A2B1B85570034D4D3 /* Styling.swift in Sources */,
 				6EADF8042B1C527E000C4FD4 /* View+Extension.swift in Sources */,
 				6E41DE572B1B52870034D4D3 /* Gradients.swift in Sources */,
