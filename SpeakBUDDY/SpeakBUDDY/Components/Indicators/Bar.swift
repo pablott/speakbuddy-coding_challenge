@@ -13,8 +13,8 @@ struct BarData: Hashable {
 }
 
 struct Bar: View {
-    let labelHeight = 30.0
-    var data: BarData
+    private let labelHeight = 30.0
+    let data: BarData
     
     var body: some View {
         GeometryReader { geometry in
