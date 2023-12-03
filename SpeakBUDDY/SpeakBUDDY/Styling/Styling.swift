@@ -56,7 +56,7 @@ struct CTAButtonStyle: ViewModifier {
         content
             .font(.body)
             .fontWeight(.semibold)
-            .padding(20)
+            .padding(16)
             .foregroundColor(Color("buttonForegroundColor"))
             .background(Color("buttonBackgroundColor"))
             .clipShape(RoundedRectangle(cornerRadius: 40))

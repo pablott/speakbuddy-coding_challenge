@@ -49,6 +49,7 @@ struct ContentView: View {
             CTAButton(title: "プランに登録する") {
                 print("Sign up was tapped")
             }
+            .frame(minWidth: 230, maxWidth: 400)
             
             Spacer(minLength: 16)
         }
