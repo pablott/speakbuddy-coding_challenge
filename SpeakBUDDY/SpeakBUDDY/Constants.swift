@@ -8,6 +8,7 @@
 import Foundation
 
 struct Constants {
+    // MARK: - Bar configuration
     static let barAnimationTiming: TimeInterval = 0.6
     static let barSpacingFactor = 0.3
 }

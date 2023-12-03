@@ -30,14 +30,6 @@ struct Bar: View {
                     .frame(height: labelHeight)
                     .applyLabelStyle()
             }
-            // TODO: debug only, remove later
-            .overlay {
-                Text("\(String(format: "%.2f", geometry.size.height))")
-                    .font(.footnote)
-                    .padding(.bottom, 32)
-                Text("\(String(format: "%.2f", data.value * (geometry.size.height - labelHeight)))")
-                    .font(.footnote)
-            }
         }
     }
 }
