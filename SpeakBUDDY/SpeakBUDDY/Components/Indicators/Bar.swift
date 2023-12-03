@@ -13,6 +13,8 @@ struct BarData: Hashable {
 }
 
 struct Bar: View {
+    // Substract label height so the normalized bars
+    // can be calculated and placed correctly
     private let labelHeight = 30.0
     let data: BarData
     
