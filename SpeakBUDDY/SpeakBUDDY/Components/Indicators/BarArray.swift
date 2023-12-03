@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct BarArray: View {
-    var data: [BarData]
+    let data: [BarData]
+    
     var body: some View {
-        HStack(spacing: 15) {
-            ForEach(Array(data.enumerated()), id: \.0.self) { index, item in
-                Bar(data: item)
-                    .tag(index)
+        // Geometry proxy is used to adjust bar spacing depending on screen sizes.
+        // More sophisticated rules could be added here.
+        GeometryReader { geometry in
+            HStack(spacing: (geometry.size.width / CGFloat(data.count)) * 0.3) {
+                ForEach(Array(data.enumerated()), id: \.0.self) { index, item in
+                    Bar(data: item)
+                        .tag(index)
+                }
             }
         }
     }
