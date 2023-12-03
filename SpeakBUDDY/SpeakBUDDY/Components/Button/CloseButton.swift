@@ -13,12 +13,8 @@ struct CloseButton: View {
     var body: some View {
         Button(action: action) {
             Image(systemName: "xmark")
-                .fontWeight(.black)
-                .padding(12)
-                .foregroundColor(Color("textColor"))
-                .background(Color("closeButtonBackgroundColor"))
-                .clipShape(Circle())
-                .applyButtonShadow()
+                .applyCloseButtonStyle()
         }
+        .applyButtonShadow()
     }
 }

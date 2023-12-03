@@ -14,16 +14,8 @@ struct CTAButton: View {
     var body: some View {
         Button(action: action) {
             Text(title)
-                .padding(20)
-                .foregroundColor(Color("buttonForegroundColor"))
-                .background(Color("buttonBackgroundColor"))
-        }
-        .clipShape(RoundedRectangle(cornerRadius: 40))
-        .overlay {
-            RoundedRectangle(cornerRadius: 40)
-                .stroke(Color("buttonBorderColor"))
+                .applyCTAButtonStyle()
         }
         .applyButtonShadow()
-        .buttonStyle(.plain)
     }
 }
