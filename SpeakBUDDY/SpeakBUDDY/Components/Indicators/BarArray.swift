@@ -17,7 +17,6 @@ struct BarArray: View {
             HStack(spacing: (geometry.size.width / CGFloat(data.count)) * Constants.barSpacingFactor) {
                 ForEach(Array(data.enumerated()), id: \.0.self) { index, item in
                     Bar(data: item)
-                        .tag(index)
                 }
             }
         }
