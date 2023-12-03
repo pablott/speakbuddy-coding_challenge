@@ -8,13 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let arrayData: [BarData] = [
-        BarData(value: 0.2, label: "現在"),
-        BarData(value: 0.33, label: "3ヶ月"),
-        BarData(value: 0.7, label: "1年"),
-        BarData(value: 1, label: "2年"),
-
-    ]
+    @StateObject var model = DataSource()
     
     var body: some View {
         VStack {
@@ -33,7 +27,7 @@ struct ContentView: View {
             // Bar array
             Spacer(minLength: 32)
             HStack {
-                BarArray(data: arrayData)
+                BarArray(data: model.arrayData)
                     .frame(minHeight: 100, maxHeight: 500)
                     .padding(.horizontal, 40)
             }
